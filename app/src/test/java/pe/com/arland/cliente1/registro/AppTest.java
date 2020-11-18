@@ -6,9 +6,73 @@ package pe.com.arland.cliente1.registro;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+
+@DisplayName("TEST CICLO DE VIDA DE TEST")
 class AppTest {
-    @Test void appHasAGreeting() {
+    
+	/*
+	@Test void appHasAGreeting() {
       App classUnderTest = new App();
       assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    */
+    
+	@BeforeAll
+	static void setupAll() {
+		System.out.println("*****************************");
+		System.out.println("ETAPA BEFORE ALL*************");
+		System.out.println("configurar todas las Pruebas necesarias para los test");
+		System.out.println("*****************************");
+	}
+	
+	@BeforeEach
+	void setup() {
+		System.out.println("*****************************");
+		System.out.println("ETAPA BEFORE EACH*************");
+		System.out.println("configurar ANTES DE CADA TEST ");
+		System.out.println("*****************************");
+	}
+	
+	@DisplayName("TEST UNO")
+    @Test
+    void testOne() {
+    	System.out.println("TEST 1");
+    }
+    
+	@DisplayName("TEST DOS")
+    @Disabled
+    @Test
+    void testTwo() {
+    	System.out.println("TEST 2");
+    }
+    
+	@DisplayName("TEST TRES")
+    @Test
+    void testThree() {
+    	System.out.println("TEST 3");
+    }
+    
+    @AfterEach
+    void teardown () {
+		System.out.println("*****************************");
+		System.out.println("ETAPA : AFTER EACH*************");
+		System.out.println("configurar DESPUES DE CADA TEST ");
+		System.out.println("*****************************");
+    }
+    
+    @AfterAll 
+    static void tearDownAll() {
+		System.out.println("*****************************");
+		System.out.println("ETAPA : AFTER EACH*************");
+		System.out.println("Desmontado de TODAS LAS PRUEBAS ");
+		System.out.println("*****************************");	
+    }
+    
 }
