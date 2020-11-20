@@ -36,9 +36,10 @@ class AutenticationServicesTest {
 		System.out.println("****************************************");
      	serviceAuth.setClienteDAO(new ClientesRepositoryImpl() );
      	serviceAuth.setUsuarioDAO(new UsuariosAplicacionRepositoryImpl());
-
 	}
 
+	
+	
 	@DisplayName ("CONFIGURACION DE CADA PRUEBA")
 	@BeforeEach
 	void configuracionCadaPrueba() {
