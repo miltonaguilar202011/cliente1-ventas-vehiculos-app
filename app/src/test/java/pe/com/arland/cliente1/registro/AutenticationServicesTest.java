@@ -3,6 +3,7 @@ package pe.com.arland.cliente1.registro;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -61,6 +62,8 @@ class AutenticationServicesTest {
 		assertNotNull(codUsuario, "Codigo Usuario es nullo");
 		assertNotNull(password, "Password Usuario es nullo");
 		
+		//assertTrue(codUsuario.isEmpty()||password.isEmpty(),"Codigo de usuario o contraseña esta vacio");
+
 		//EJEMPLO USO DIRECTO DE FAIL
 		if (codUsuario.isEmpty() || password.isEmpty()) {
 			fail("Codigo de Usuario o Password estan Vacios");
@@ -172,7 +175,7 @@ class AutenticationServicesTest {
 	}
 	
 	@DisplayName ("LIBERACION DE DATOS DE CADA PRUEBA")
-	@BeforeEach
+	@AfterEach
 	void restauracionDeCadaPrueba() {
 		System.out.println("******************************************************");
 		System.out.println("** ETAPA :CONFIGURACION PREVIA ANTES DE CADA PRUEBA **");
