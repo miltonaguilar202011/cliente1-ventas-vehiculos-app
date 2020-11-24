@@ -1,4 +1,4 @@
-package pe.com.arland.cliente1.registro;
+package pe.com.arland.seguridad1.autenticacion;
 
 import static org.junit.jupiter.api.Assertions.*;
 
