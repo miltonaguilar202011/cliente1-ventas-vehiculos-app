@@ -87,6 +87,8 @@ dependencies {
 	
 	//LIBRERIAS DE TERCEROS
 	implementation 'org.hamcrest:hamcrest-core:2.2'
+	implementation 'org.assertj:assertj-core:3.18.1'
+	
 
 }
 

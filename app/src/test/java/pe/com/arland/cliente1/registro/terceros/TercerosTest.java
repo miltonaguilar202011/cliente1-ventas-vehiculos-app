@@ -55,7 +55,7 @@ class TercerosTest {
 	    	
 	    	//EJEMPLO ASSER SAME - SI AMBAS DIRECCIONES SON LAS MISMAS VIVEN EN EL MISMO LUGAR
 	    	//assertSame(direccion1,direccion3,"Ambas direcciones son las mismas");
-	    	//assertThat(direccion1, equalTo(direccion2));
+	    	assertThat(direccion1, equalTo(direccion2));
 	    	
 	    	//EJEMPLO ASSER SAME - SI AMBAS DIRECCIONES SON LAS MISMAS VIVEN EN EL MISMO LUGAR
 	    	assertSame(direccion1,direccion2,"Ambas direcciones NO son las mismas");
