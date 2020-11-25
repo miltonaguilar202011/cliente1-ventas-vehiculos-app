@@ -84,6 +84,9 @@ dependencies {
 
 	// LOG4J PARA USO DE LOGS
 	implementation 'com.weicoder:log4j:3.4.5-jdk8'
+	
+	//LIBRERIAS DE TERCEROS
+	implementation 'org.hamcrest:hamcrest-core:2.2'
 
 }
 
@@ -131,16 +134,17 @@ tasks.named('test') {
      //includeTags 'Individual'
      //excludeTags 'Individual'
 
- 	 excludeEngines 'junit-jupiter'
-     includeEngines 'junit-vintage'
+ 	 //excludeEngines 'junit-jupiter'
+     //includeEngines 'junit-vintage'
+     //excludeEngines 'junit-jupiter'
       
 	filter {
         //include specific method in any of the tests
-        includeTestsMatching "*CalculadoraTest"
+        //includeTestsMatching "*CalculadoraTest"
         //includeTestsMatching "*testSuma"
         //excludeTestsMatching "*testSuma"
-		//**setExcludePatterns "*Resta","*Suma"
-        //**setIncludePatterns "*Resta","*Suma"
+		//setExcludePatterns "*Resta","*Suma"
+        //setIncludePatterns "*Resta","*Suma"
      }
     }
 }

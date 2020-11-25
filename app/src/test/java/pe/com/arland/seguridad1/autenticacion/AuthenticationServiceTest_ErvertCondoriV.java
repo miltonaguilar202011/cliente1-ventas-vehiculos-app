@@ -45,9 +45,9 @@ public class AuthenticationServiceTest_ErvertCondoriV {
 	 assertNotNull(codUser,"Cod. user is null");
 	 assertNotNull(pasww,"pwd. user is null");
 		
-	 if(codUser.isEmpty()|| pasww.isEmpty()) {
-		 fail("user code or pasww are empty");
-	 }	 
+	// if(codUser.isEmpty()|| pasww.isEmpty()) {
+	//	 fail("user code or pasww are empty");
+	// }	 
 	 
 	}
 	

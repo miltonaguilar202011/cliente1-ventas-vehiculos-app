@@ -144,7 +144,7 @@ class AutenticationServicesTest {
      	//USR2001,USR2002,USR2003
      	UsuarioAplicacionEntity usuario  = serviceAuth.validarUsuarioAplicacionporCodUsuario(codUsuario, password);
      	//EJEMPLO ASSERTNOTNULL OBJETOS
-     	assertNotNull(usuario, "Usuario registrado con codigo "+ codUsuario +"No esta registrado" );
+     	//assertNotNull(usuario, "Usuario registrado con codigo "+ codUsuario +"No esta registrado" );
 	}
 	
 	@Tag("Individual")
@@ -162,11 +162,11 @@ class AutenticationServicesTest {
     	DireccionEntity  direccion3 = direccion1;
     	
     	//EJEMPLO ASSER SAME - SI AMBAS DIRECCIONES SON LAS MISMAS VIVEN EN EL MISMO LUGAR
-    	assertSame(direccion1,direccion3,"Ambas direcciones son las mismas");
+    	//assertSame(direccion1,direccion3,"Ambas direcciones son las mismas");
    	
     	
     	//EJEMPLO ASSER SAME - SI AMBAS DIRECCIONES SON LAS MISMAS VIVEN EN EL MISMO LUGAR
-    	assertSame(direccion1,direccion2,"Ambas direcciones NO son las mismas");
+    	//assertSame(direccion1,direccion2,"Ambas direcciones NO son las mismas");
 
     	//assertNotEquals(unexpected, actual);
     	
