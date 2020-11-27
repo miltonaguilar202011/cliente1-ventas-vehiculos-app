@@ -52,9 +52,11 @@ public class VentasServicesRepeatedTest {
 
 		@RepeatedTest(value = 10, name = "{displayName} {currentRepetition}/{totalRepetitions}")	
 		@DisplayName ("TEST DE PRUEBA COMPROBANTE"+ "{currentRepetition}" )
-		@Test
 		//void testVentasConsultaFacturas(TestInfo  test) {
 		void testVentasConsultaFacturas(RepetitionInfo  test) {
+			
+			
+			
 			//*EJEMPLO REPEATED CLASS 345-348
 			System.out.println("******************************************************");
 			System.out.println("** ETAPA : PRUEBAS DE FACTURAS **");

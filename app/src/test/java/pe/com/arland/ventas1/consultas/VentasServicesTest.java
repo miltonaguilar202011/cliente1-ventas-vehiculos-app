@@ -11,6 +11,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import pe.com.arland.cliente1.registro.entity.BoletaEntity;
 import pe.com.arland.cliente1.registro.entity.ClienteEntity;
 import pe.com.arland.cliente1.registro.entity.DireccionEntity;
 import pe.com.arland.cliente1.registro.entity.FacturaEntity;
@@ -39,7 +40,6 @@ class VentasServicesTest {
 		System.out.println("**  REGISTRO DE DATOS DE PRUEBA       **");
 		System.out.println("****************************************");
      	serviceVentas.setComprobanteDAO(new ComprobanteRepositoryImpl() );
- 
 	}
 
 	@DisplayName ("CONFIGURACION DE CADA PRUEBA")
@@ -57,6 +57,8 @@ class VentasServicesTest {
 
 		//*EJEMPLO ASUME 
      	//USR2001,USR2002,USR2003
+
+		
      	FacturaEntity factura1  = serviceVentas.recuperarFactura("0020", (long) 345);
      	FacturaEntity factura2  = serviceVentas.recuperarFactura("0020", (long) 346);
      	FacturaEntity factura3  = serviceVentas.recuperarFactura("0020", (long) 347);
@@ -87,7 +89,7 @@ class VentasServicesTest {
     	
 
 	}
-
+	
 
 	@DisplayName ("LIBERACION DE DATOS DE CADA PRUEBA")
 	@BeforeEach
