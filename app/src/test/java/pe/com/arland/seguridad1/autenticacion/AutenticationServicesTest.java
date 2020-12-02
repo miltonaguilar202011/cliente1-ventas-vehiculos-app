@@ -18,7 +18,7 @@ import pe.com.arland.seguridad1.autenticacion.repository.mongodb.UsuariosAplicac
 import pe.com.arland.seguridad1.autenticacion.service.impl.AutenticacionServiceImpl;
 
 @DisplayName ("SERVICIO DE AUTENTICACION")
-class AutenticationServicesTest {
+public class AutenticationServicesTest {
 	
 	private static String codUsuario = null;
 	private static String password = null;

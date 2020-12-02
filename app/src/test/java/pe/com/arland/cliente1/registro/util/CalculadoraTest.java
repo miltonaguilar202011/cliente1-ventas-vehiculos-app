@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("TEST CICLO DE VIDA DE CALCULADORE")
-class CalculadoraTest {
+public class CalculadoraTest {
 
 	@DisplayName("Test Calculadora Suma")
 	@Test
